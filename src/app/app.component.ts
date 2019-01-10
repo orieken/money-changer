@@ -18,7 +18,6 @@ export class AppComponent {
 
   getChange() {
     this.exchangerService.getDenominationVariations(this.change.value);
-    console.log(this.exchangerService.results);
     this.permutationCount = this.exchangerService.results.length;
     this.permutations = this.exchangerService.results;
     this.change.reset();
