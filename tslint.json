@@ -1,4 +1,8 @@
 {
+  "extends": [
+    "tslint-clean-code",
+    "tslint-sonarts"
+  ],
   "rulesDirectory": [
     "codelyzer"
   ],
@@ -126,6 +130,21 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+
+    // tslint-clean-code
+    "try-catch-first": true,
+    "max-func-args": [true, 3],
+    "no-flag-args": true,
+    "no-commented-out-code": true,
+    "prefer-dry-conditionals": true,
+    "no-complex-conditionals": true,
+    "no-for-each-push": true,
+    "newspaper-order": true,
+    "id-length": true,
+    "no-map-without-usage": true,
+
+    // sonarts
+    "cognitive-complexity": [true, 5]
   }
 }
