@@ -39,7 +39,7 @@ describe('getDenominationVariations', () => {
     const results = service.result;
     expect(results.length).toEqual(242);
     expect(results[0]).toEqual(firstItem);
-    const resultsReversed = results.reverse();
+    const resultsReversed = results.reverse(); // tslint:disable-line
     expect(resultsReversed[0]).toEqual(lastItem);
   });
 });

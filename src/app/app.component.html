@@ -9,19 +9,19 @@
     <label>
       Get Change for:
     </label>
-    <input type="number" [formControl]="change"/>
+    <input id="exchange-amount" type="number" [formControl]="change"/>
   </div>
   <div class="form-group">
-    <button (click)="getChange()" class="btn btn-dark">Get permutations</button>
+    <button id="get-permutations" (click)="getChange()" class="btn btn-dark">Get permutations</button>
   </div>
 
 </div>
 <div>
-  <p>
+  <p id="permutation-total">
     there are {{ permutationCount }} permutations for: {{ change.value }}
   </p>
-  <ul>
-    <li *ngFor="let permutation of permutations">
+  <ul id="permutations">
+    <li *ngFor="let permutation of permutations; let i = index" id="permutation-{{i + 1}}">
       <p>{{ permutation }}</p>
     </li>
   </ul>
