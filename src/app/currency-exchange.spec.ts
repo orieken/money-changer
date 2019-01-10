@@ -36,8 +36,10 @@ describe('getDenominationVariations', () => {
     const firstItem = Array.from({length: 100}, _ => (1));
     const lastItem = Array.from({length: 4}, _ => (25));
     service.variations(100);
-    expect(service.result.length).toEqual(242);
-    expect(service.result[0]).toEqual(firstItem);
-    expect(service.result.reverse()[0]).toEqual(lastItem);
+    const results = service.result;
+    expect(results.length).toEqual(242);
+    expect(results[0]).toEqual(firstItem);
+    const resultsReversed = results.reverse();
+    expect(resultsReversed[0]).toEqual(lastItem);
   });
 });

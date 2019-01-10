@@ -141,7 +141,7 @@
     "no-complex-conditionals": true,
     "no-for-each-push": true,
     "newspaper-order": true,
-    "id-length": true,
+    "id-length": [true, ["_"]],
     "no-map-without-usage": true,
 
     // sonarts
